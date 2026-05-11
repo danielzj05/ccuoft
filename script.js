@@ -1,30 +1,36 @@
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobile-menu-btn")
 const mobileNav = document.getElementById("mobile-nav")
-const menuIcon = mobileMenuBtn.querySelector(".menu-icon")
-const closeIcon = mobileMenuBtn.querySelector(".close-icon")
 
-mobileMenuBtn.addEventListener("click", () => {
-  mobileNav.classList.toggle("active")
+if (mobileMenuBtn && mobileNav) {
+  const menuIcon = mobileMenuBtn.querySelector(".menu-icon")
+  const closeIcon = mobileMenuBtn.querySelector(".close-icon")
 
-  if (mobileNav.classList.contains("active")) {
-    menuIcon.style.display = "none"
-    closeIcon.style.display = "inline"
-  } else {
-    menuIcon.style.display = "inline"
-    closeIcon.style.display = "none"
-  }
-})
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("active")
 
-// Close mobile menu when clicking on a link
-const mobileLinks = mobileNav.querySelectorAll("a")
-mobileLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileNav.classList.remove("active")
-    menuIcon.style.display = "inline"
-    closeIcon.style.display = "none"
+    if (!menuIcon || !closeIcon) return
+
+    if (mobileNav.classList.contains("active")) {
+      menuIcon.style.display = "none"
+      closeIcon.style.display = "inline"
+    } else {
+      menuIcon.style.display = "inline"
+      closeIcon.style.display = "none"
+    }
   })
-})
+
+  // Close mobile menu when clicking on a link
+  const mobileLinks = mobileNav.querySelectorAll("a")
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("active")
+      if (!menuIcon || !closeIcon) return
+      menuIcon.style.display = "inline"
+      closeIcon.style.display = "none"
+    })
+  })
+}
 
 // Set current year in footer
 const yearElement = document.getElementById("year")
