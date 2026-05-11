@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors | University of Toronto Concrete Canoe Team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <img src="/img/CCLogo.jpg" alt="Concrete Canoe Logo" class="h-10 w-10 object-contain" />
+                    </div>
+                    <div class="logo-text">
+                        <div class="team-name">University of Toronto Concrete Canoe</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <div class="nav-column">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="execs.html">Team</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="canoes.html">Canoes</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="#contact">Contact</a>
+                    </div>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="menu-icon">☰</span>
+                    <span class="close-icon" style="display: none;">✕</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobile-nav">
+                <a href="index.html">Home</a>
+                <a href="canoes.html">Canoes</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <div>SUPPORT.</div>
+                        <div>BUILD.</div>
+                        <div>RACE.</div>
+                    </h1>
+
+                    <div class="hero-text">
+                        <p>
+                            Our sponsors make every stage of the concrete canoe season possible, from mix design and
+                            materials testing to construction and competition travel.
+                        </p>
+                        <p>
+                            We are grateful to every organization that invests in student-led engineering, innovation,
+                            and hands-on learning at the University of Toronto.
+                        </p>
+                        <p>
+                            Interested in sponsoring the team? Contact us at
+                            <a href="mailto:canoe@g.skule.ca">canoe@g.skule.ca</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="hero-image carousel-container">
+                        <div class="carousel" id="sponsorCarousel">
+                            <div class="carousel-item active">
+                                <img src="img/Sponsors/2025-2026/skuleEndowmentFund.png" alt="Skule Endowment Fund logo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Sponsors/2025-2026/Soprema.png" alt="Soprema logo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Sponsors/2025-2026/rjc_engineers_logo.svg" alt="RJC Engineers logo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Sponsors/2025-2026/UofTAlumni.png" alt="UofT Alumni logo">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Sponsors/2025-2026/civMinUofT.png" alt="CivMin Department of Civil and Mineral Engineering logo">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-prev" onclick="carouselMove(-1)">❮</button>
+                        <button class="carousel-btn carousel-next" onclick="carouselMove(1)">❯</button>
+                    </div>
+                    <div class="hero-card">
+                        <h3>Partner With Us</h3>
+                        <p>Support student engineering and be featured across our events, media, and race season.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="gallery sponsors-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Sponsors</h2>
+                <p>
+                    We are proud to partner with a diverse range of organizations that support our mission to provide
+                    hands-on engineering experience to students at the University of Toronto. Our sponsors play a crucial
+                    role in our success, providing resources, expertise, and opportunities that help us design, build,
+                    and compete with the best teams in the region.
+                </p>
+            </div>
+
+            <h3 style="grid-column: 1 / -1; text-align: left; margin: 2rem 0 1.5rem;">Gold Sponsors</h3>
+            <div class="gallery-grid">
+                <a href="#" class="gallery-item" aria-label="Skule Endowment Fund">
+                    <div class="gallery-image">
+                            <img src="img/Sponsors/2025-2026/skuleEndowmentFund.png" alt="Skule Endowment Fund logo">
+                    </div>
+                    <h3>Skule Endowment Fund</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="Soprema">
+                    <div class="gallery-image">
+                            <img src="img/Sponsors/2025-2026/Soprema.png" alt="Soprema logo">
+                    </div>
+                    <h3>Soprema</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="RJC Engineers">
+                    <div class="gallery-image">
+                            <img src="img/Sponsors/2025-2026/rjc_engineers_logo.svg" alt="RJC Engineers logo">
+                    </div>
+                    <h3>RJC Engineers</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="UofT Alumni">
+                    <div class="gallery-image">
+                            <img src="img/Sponsors/2025-2026/UofTAlumni.png" alt="UofT Alumni logo">
+                    </div>
+                    <h3>Engineering Alumni Network</h3>
+                </a>
+            </div>
+
+            <h3 style="grid-column: 1 / -1; text-align: left; margin: 2rem 0 1.5rem;">Silver Sponsors</h3>
+            <div class="gallery-grid">
+                <a href="#" class="gallery-item" aria-label="Civmin Department of Civil and Mineral Engineering">
+                    <div class="gallery-image">
+                            <img src="img/Sponsors/2025-2026/civMinUofT.png" alt="CivMin Department of Civil and Mineral Engineering logo">
+                    </div>
+                    <h3>CivMin Department of Civil and Mineral Engineering</h3>
+                </a>
+            </div>
+
+            <h3 style="grid-column: 1 / -1; text-align: left; margin: 2rem 0 1.5rem;">YNCN</h3>
+            <div class="gallery-grid">
+                <a href="#" class="gallery-item" aria-label="YNCN">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/YNCN.png" alt="YNCN">
+                    </div>
+                    <h3>Your Next Career Network</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="Owens Corning">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/Owens_Corning_logo.png" alt="Owens Corning Logo">
+                    </div>
+                    <h3>Owens Corning</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="Ashgrove Cement Company">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/ASHGROVE_CEMENT_COMPANY_Logo.jpg" alt="Ashgrove Cement Company Logo">
+                    </div>
+                    <h3>Ashgrove Cement Company</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="Master Builders Solutions">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/Master_Builders_Solutions_log.jpg" alt="Master Builders Solutions Logo">
+                    </div>
+                    <h3>Master Builders Solutions</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="Left Turn Right Turn Consulting">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/leftTurnRightTurn.jpg" alt="Left Turn Right Turn Consulting Logo">
+                    </div>
+                    <h3>Left Turn Right Turn Consulting</h3>
+                </a>
+
+                 <a href="#" class="gallery-item" aria-label="EngSci Division of Engineering Science">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/EngSciUofT.png" alt="EngSci Division of Engineering Science">
+                    </div>
+                    <h3>EngSci Division of Engineering Science</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="MIE Department of Mechanical & Industrial Engineering">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/MIEUofT.png" alt="MIE Department of Mechanical & Industrial Engineering">
+                    </div>
+                    <h3>MIE Department of Mechanical & Industrial Engineering</h3>
+                </a>
+
+                <a href="#" class="gallery-item" aria-label="ECE Department of Electrical and Computer Engineering">
+                    <div class="gallery-image">
+                        <img src="img/Sponsors/2025-2026/ECEUofT.png" alt="ECE Department of Electrical and Computer Engineering">
+                    </div>
+                    <h3>ECE Department of Electrical and Computer Engineering</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="index.html">Our Story</a></li>
+                        <li><a href="execs.html">Team Members</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><a href="canoes.html">Canoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:canoe@g.skule.ca">canoe@g.skule.ca</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

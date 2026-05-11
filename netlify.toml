@@ -1,0 +1,18 @@
+[build]
+  command = "echo 'Static site deploy: no build step required'"
+  publish = "."
+
+[[redirects]]
+  from = "/canoes"
+  to = "/canoes.html"
+  status = 200
+
+[[redirects]]
+  from = "/execs"
+  to = "/execs.html"
+  status = 200
+
+[[redirects]]
+  from = "/sponsors"
+  to = "/sponsors.html"
+  status = 200
