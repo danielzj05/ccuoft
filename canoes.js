@@ -1,6 +1,57 @@
 // Canoe gallery data
 const galleryItems = [
   {
+    id: 0,
+    year: "2025-2026",
+    name: "I'm pretty sure you said this in the kickoff but I forgot what it was",
+    theme: "Not quite sure tbh",
+    category:"light",
+    image: "img/Canoes/canoe2026.jpg",
+    link: "canoes/canoe2026.html",
+
+  },
+  {
+    id: 0,
+    year: "2024-2025",
+    name: "C4N O3H",
+    theme: "Not quite sure tbh",
+    category:"light",
+    image: "img/Canoes/c4n03h-pl.jpg",
+    link: "canoes/canoe2025.html",
+  },
+  {
+    id: 1,
+    year: "2023 - 2024",
+    name: "ΠRATE",
+    theme: "Pirates",
+    category:"light",
+    image: "img/Canoes/PIRATE_thumb.png",
+    link: "canoes/canoe2024.html",
+  },
+  {
+    id: 2,
+    year: "2022 - 2023",
+    name:"The Treasury Yield",
+    theme:"Bonds James Tuxedo",
+    category:"light",
+    image: "img/Canoes/tuxedo_thumb.png",
+    link: "canoes/canoe2023.html"
+  },
+  {
+    id: 3,
+    year: "2021 - 2022",
+    name: "???",
+    theme: "???",
+    category: "light",
+  },
+  {
+    id: 4,
+    year: "2020 - 2021",
+    name: "???",
+    theme: "???",
+    category: "light",
+  },
+  {
     id: 1,
     year: "2019 - 2020",
     name: "704Spadina",
