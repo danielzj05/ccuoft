@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Canoe 2T6-2T7 | The Path so Far</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+
+        .progress-tl {
+            position: relative;
+            width: 100%;
+            border-radius: 1rem;
+            container-type: inline-size;
+        }
+        .progress-title {
+            margin: 0 0 1rem;
+            font-size: 3rem;
+            text-align: center;
+            font-family: 'Geo', sans-serif;
+            letter-spacing: .09em;
+            word-spacing: .22em;
+            text-transform: uppercase;
+        }
+        .progress-tl-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 1rem;
+            display: grid;
+            position: relative;
+        }
+        .list-label-tl {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0 0 0.6rem;
+            letter-spacing: .04em;
+        }
+        .tl-q {
+            position: relative;
+            padding: 0 0 1.2rem 1.2rem;
+        }
+        .tl-q::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0.5rem;
+            width: 0.2rem;
+            background:#2b57b6;
+        }
+        .tl-q--now::before{
+            background:linear-gradient(90deg, #f7be06 0 40%, #2b57b6 40%);
+        }
+        .tl-q--past::before{
+            background:#f7be06;
+        }
+        .tl-q::after {
+            content: '';
+            position: absolute;
+            top: 0.1rem;
+            left: 0;
+            box-sizing: border-box;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: 0.2rem solid #1e61b8;
+            background: #1e61b8;
+        }
+        .tl-q--now::after {
+            background: #f7be06;
+            border-color: #c4a600a4;
+            border-width: 0.25rem;
+            box-shadow: 0 0 0 0.25rem #795e0656;
+        }
+        .tl-q--past::after {
+            background: #f7be06;
+            border: 0.2rem solid #f7be06;
+        }
+        .q-sublist {
+            display: grid;
+            gap: 0.5rem;
+            list-style-type: none;
+        }
+        .q-sublist li {
+            font-size: 0.9rem;
+            padding: 0.625rem 0.875rem;
+            border-radius: 0.875rem;
+            background:#cecdcd;
+        }
+        .q-sublist-done li {
+            font-size: 0.9rem;
+            padding: 0.625rem 0.875rem;
+            border-radius: 0.875rem;
+            background:#f7bf06c9;
+        }
+        li.q-sublist-done {
+            font-size: 0.9rem;
+            padding: 0.625rem 0.875rem;
+            border-radius: 0.875rem;
+            background:#f7bf06c9;
+        }
+        .q-subteam {
+            display:table;
+            margin-bottom: 0.45rem;
+            padding: 0.125rem 0.5rem;
+            border-radius: 1000rem;
+            text-transform: uppercase;
+            font-family:'Geo', sans-serif;
+            font-size: 0.75rem;
+        }
+        .q-subteam--logi {
+            background: #fdc03d;
+            color: #363636;
+        }
+        .q-subteam--tech{
+            background:#2b57b6;
+            color: #363636;
+        }
+
+        @container (min-width: 35rem) {
+            .progress-tl-list {
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 0.875rem;
+            }
+            .tl-q{
+                padding: 2rem 0 0;
+            }
+            .tl-q::before {
+                left: 0;
+                top: 0.5rem;
+                right: -1rem;
+                width: auto;
+                height: 0.2rem;
+            }
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo Section -->
+                <div class="logo-section">
+                    <div class="logo-circle">
+                        <img src="img/CCLogo.jpg" alt="Concrete Canoe Logo" className="h-10 w-10 object-contain" />
+                    </div>
+                    <div class="logo-text">
+                        <div class="team-name">University of Toronto Concrete Canoe</div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <div class="nav-column">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="progress.html">Get Involved!</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="execs.html">Team</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="canoes.html">Canoes</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="menu-icon">☰</span>
+                    <span class="close-icon" style="display: none;">✕</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobile-nav">
+                <a href="index.html">Home</a>
+                <a href="canoes.html">Canoes</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="progress-tl">
+            <h3 class="progress-title">This Year at a Glance:</h3>
+            <ol class="progress-tl-list">
+                <li class="tl-q tl-q--past">
+                    <h5 class ="list-label-tl">Summer 2026</h5>
+                    <ul class="q-sublist q-sublist-done">
+                        <li>Exec Recruitment and Onboarding</li>
+                        <li>Canoe Theme Brainstorming</li>
+                        <li>First Paddling Sessions</li>
+                    </ul>
+                </li>
+                <li class="tl-q tl-q--now">
+                    <h5 class ="list-label-tl">Fall 2026</h5>
+                    <ul class="q-sublist">
+                        <li class="q-sublist-done">Canoe Theme Vote!</li>
+                        <li>Concrete mix texting & iteration</li>
+                        <li>Creating the moulds</li>
+                    </ul>
+                </li>
+                <li class="tl-q">
+                    <h5 class ="list-label-tl">Winter 2027</h5>
+                    <ul class = "q-sublist">
+                        <li>Casting day!</li>
+                        <li>Project Proposal & Technical Documentation</li>
+                        <li>Sanding & Painting</li>
+                    </ul>
+                </li>
+                <li class="tl-q">
+                    <h5 class ="list-label-tl">Spring 2027</h5>
+                    <ul class = "q-sublist">
+                        <li>Paddling Practice</li>
+                        <li>Competition! (Waterloo, ON)</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+
+
+    
+    </div>
+    <div class="container centered">
+    <h1 class="progress-title">Interested?</h1>
+    <p>Join our discord server!</p>
+    <a href="https://discord.gg/AkGsMGkXxj">
+                    <img src="img/Icons/Discord.png" style="width: 5vw; min-width: 30px;"/>
+                </a>
+    <p>To work with concrete in the GB31 lab or build with tools, mandatory safety training needs to be completed.</p>
+    <p>More information can be found <a href="https://docs.google.com/document/d/1X9042jE8VYZGRULNQ2fxnhOphXaWaZO2/edit?usp=sharing">here</a></p>
+
+    <h1 class="progress-title">Upcoming Meeting Times:</h1>
+    <p class="centered"><iframe class="centered" id="gcal" src="https://calendar.google.com/calendar/embed?src=c_2b70e1fb6735645241198004a1dced8f1dffe9a3bd3177ea93682a8b5e55f50e%40group.calendar.google.com&ctz=America%2FToronto" margin="auto" width="1200" height="600" text-align="center" display="block"></iframe>
+        </p></div>
+
+    <script src="script.js"></script>
+
+        <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Team</h4>
+                    <ul>
+                        <li><a href="index.html">Our Story</a></li>
+                        <li><a href="execs.html">Executive Directory</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Projects</h4>
+                    <ul>
+                        <li><a href="progress.html">Current Year Progress</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="canoes.html">Past Canoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Communications</h4>
+                    <ul>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
