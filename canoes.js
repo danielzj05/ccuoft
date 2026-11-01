@@ -6,7 +6,7 @@ const galleryItems = [
     name: "Astronautical",
     theme: "Astronautical",
     category:"light",
-    image: "img/Canoes/canoe2026.jpg",
+    image: "img/Canoes/astronautical_thumb.png",
     link: "canoes/canoe2026.html",
 
   },
@@ -31,8 +31,8 @@ const galleryItems = [
   {
     id: 2,
     year: "2022 - 2023",
-    name:"006",
-    theme:"Bames Jond",
+    name:"Incognito",
+    theme:"Spy",
     category:"light",
     image: "img/Canoes/tuxedo_thumb.png",
     link: "canoes/canoe2023.html"
@@ -41,7 +41,7 @@ const galleryItems = [
     id: 3,
     year: "2021 - 2022",
     name: "Fenrir",
-    theme: "Wolf",
+    theme: "Norse Mythology",
     category: "light",
     image: "img/Canoes/fenrir_thumb.png",
   },
