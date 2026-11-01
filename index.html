@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University of Toronto Concrete Canoe Team</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .blue-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2b57b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+
+        .blue-button a:hover{
+            box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.6);
+        }
+    </style>
 </head>
 
 <body>
@@ -29,16 +44,19 @@
                         <a href="index.html">Home</a>
                     </div>
                     <div class="nav-column">
-                        <a href="execs.html">Team</a>
+                        <a href="progress.html">The Year So Far</a>
                     </div>
                     <div class="nav-column">
-                        <a href="canoes.html">Canoes</a>
+                        <a href="execs.html">Our Team</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="canoes.html">Past Canoes</a>
                     </div>
                     <div class="nav-column">
                         <a href="sponsors.html">Sponsors</a>
                     </div>
                     <div class="nav-column">
-                        <a href="#contact">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </nav>
                 <!-- Mobile Menu Button -->
@@ -50,11 +68,25 @@
 
             <!-- Mobile Navigation -->
             <nav class="nav-mobile" id="mobile-nav">
-                <a href="index.html">Home</a>
-                <a href="canoes.html">Canoes</a>
-                <a href="sponsors.html">Sponsors</a>
-                <a href="#contact">Contact</a>
-            </nav>
+                    <div class="nav-column">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="progress.html">The Year So Far</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="execs.html">Our Team</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="canoes.html">Past Canoes</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="sponsors.html">Sponsors</a>
+                    </div>
+                    <div class="nav-column">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </nav>
         </div>
     </header>
 
@@ -64,9 +96,7 @@
             <div class="hero-grid">
                 <div class="hero-content">
                     <h1 class="hero-title">
-                        <div>DESIGN.</div>
-                        <div>CAST.</div>
-                        <div>RACE.</div>
+                        <div>DESIGN. CAST. RACE.</div>
                     </h1>
 
                     <div class="hero-text">
@@ -83,6 +113,9 @@
 
                         <p>
                             New members are always welcome; <a href="https://discord.gg/JHpzDfuffJ">join our discord server</a> to get involved and learn more about the team!
+                        </p>
+                        <p class="blue-button">
+                            <a href="progress.html">Explore Our Road to Competition This Year</a>
                         </p>
                     </div>
                 </div>
@@ -209,7 +242,7 @@
                 <div class="footer-column">
                     <h4>About</h4>
                     <ul>
-                        <li><a href="#home">Our Story</a></li>
+                        <li><a href="index.html">Our Story</a></li>
                         <li><a href="execs.html">Team Members</a></li>
                     </ul>
                 </div>
@@ -217,7 +250,7 @@
                 <div class="footer-column">
                     <h4>Projects</h4>
                     <ul>
-                        <li><a href="canoes.html">Canoes</a></li>
+                        <li><a href="canoes.html">Past Canoes</a></li>
                     </ul>
                 </div>
 
@@ -226,14 +259,11 @@
                     <ul>
                         <li><a href="sponsors.html">Sponsors</a></li>
                     </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>Contact</h4>
                     <ul>
-                        <li><a href="mailto:canoe@g.skule.ca">canoe@g.skule.ca</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </footer>
