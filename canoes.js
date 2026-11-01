@@ -1,6 +1,59 @@
 // Canoe gallery data
 const galleryItems = [
   {
+    id: 0,
+    year: "2025 - 2026",
+    name: "Astronautical",
+    theme: "Astronautical",
+    category:"light",
+    image: "img/Canoes/astronautical_thumb.png",
+    link: "canoes/canoe2026.html",
+
+  },
+  {
+    id: 0,
+    year: "2024 - 2025",
+    name: "C4N O3H",
+    theme: "New York Taxicab",
+    category:"light",
+    image: "img/Canoes/c4n03h-pl.jpg",
+    link: "canoes/canoe2025.html",
+  },
+  {
+    id: 1,
+    year: "2023 - 2024",
+    name: "ΠRATE",
+    theme: "Pirates",
+    category:"light",
+    image: "img/Canoes/PIRATE_thumb.png",
+    link: "canoes/canoe2024.html",
+  },
+  {
+    id: 2,
+    year: "2022 - 2023",
+    name:"Incognito",
+    theme:"Spy",
+    category:"light",
+    image: "img/Canoes/tuxedo_thumb.png",
+    link: "canoes/canoe2023.html"
+  },
+  {
+    id: 3,
+    year: "2021 - 2022",
+    name: "Fenrir",
+    theme: "Norse Mythology",
+    category: "light",
+    image: "img/Canoes/fenrir_thumb.png",
+  },
+  {
+    id: 4,
+    year: "2020 - 2021",
+    name: "Polaris II",
+    theme: "Perseverance",
+    category: "light",
+    image: "img"
+  },
+  {
     id: 1,
     year: "2019 - 2020",
     name: "704Spadina",
