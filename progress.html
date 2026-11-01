@@ -75,6 +75,7 @@
             border-color: #c4a600a4;
             border-width: 0.25rem;
             box-shadow: 0 0 0 0.25rem #795e0656;
+            animation: blink_smooth 4s infinite;
         }
         .tl-q--past::after {
             background: #f7be06;
@@ -103,22 +104,52 @@
             border-radius: 0.875rem;
             background:#f7bf06c9;
         }
-        .q-subteam {
-            display:table;
-            margin-bottom: 0.45rem;
+        .q-status {
+            vertical-align: right;
+            display: inline-block;
+            margin-left: 2rem;
             padding: 0.125rem 0.5rem;
             border-radius: 1000rem;
             text-transform: uppercase;
             font-family:'Geo', sans-serif;
-            font-size: 0.75rem;
+            font-size: 1rem;
         }
-        .q-subteam--logi {
+        .q-status--inprogress {
             background: #fdc03d;
             color: #363636;
+            animation: blink_smooth-op 6s infinite;
         }
         .q-subteam--tech{
             background:#2b57b6;
             color: #363636;
+        }
+        @keyframes blink_smooth {
+            0% {
+                box-shadow: 0 0 0 0.25rem #795e0656;
+                border-color: #c4a600a4;
+                border-width: 0.25rem;
+            }
+            50% {
+                box-shadow: 0 0 0 0.25rem #795e0600;
+                border-color: #f7be06;
+            }
+            100% {
+                box-shadow: 0 0 0 0.25rem #795e0656;
+                border-color: #c4a600a4;
+                border-width: 0.25rem;
+            }
+        }
+
+        @keyframes blink_smooth-op {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.25;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
         @container (min-width: 35rem) {
@@ -165,13 +196,13 @@
                         <a href="index.html">Home</a>
                     </div>
                     <div class="nav-column">
-                        <a href="progress.html">Get Involved!</a>
+                        <a href="progress.html">The Year So Far</a>
                     </div>
                     <div class="nav-column">
-                        <a href="execs.html">Team</a>
+                        <a href="execs.html">Our Team</a>
                     </div>
                     <div class="nav-column">
-                        <a href="canoes.html">Canoes</a>
+                        <a href="canoes.html">Past Canoes</a>
                     </div>
                     <div class="nav-column">
                         <a href="sponsors.html">Sponsors</a>
@@ -213,8 +244,8 @@
                     <h5 class ="list-label-tl">Fall 2026</h5>
                     <ul class="q-sublist">
                         <li class="q-sublist-done">Canoe Theme Vote!</li>
-                        <li>Concrete mix texting & iteration</li>
-                        <li>Creating the moulds</li>
+                        <li>Concrete mix texting & iteration<span class="q-status q-status--inprogress">In progress</span></li>
+                        <li>Creating the moulds<span class="q-status q-status--inprogress">In progress</span></li>
                     </ul>
                 </li>
                 <li class="tl-q">
@@ -241,7 +272,7 @@
     </div>
     <div class="container centered">
     <h1 class="progress-title">Interested?</h1>
-    <p>Join our discord server!</p>
+    <p>We are always welcoming new members! Join our discord server via the link below:</p>
     <a href="https://discord.gg/AkGsMGkXxj">
                     <img src="img/Icons/Discord.png" style="width: 5vw; min-width: 30px;"/>
                 </a>
@@ -249,7 +280,7 @@
     <p>More information can be found <a href="https://docs.google.com/document/d/1X9042jE8VYZGRULNQ2fxnhOphXaWaZO2/edit?usp=sharing">here</a></p>
 
     <h1 class="progress-title">Upcoming Meeting Times:</h1>
-    <p class="centered"><iframe class="centered" id="gcal" src="https://calendar.google.com/calendar/embed?src=c_2b70e1fb6735645241198004a1dced8f1dffe9a3bd3177ea93682a8b5e55f50e%40group.calendar.google.com&ctz=America%2FToronto" margin="auto" width="1200" height="600" text-align="center" display="block"></iframe>
+    <p class="centered"><iframe class="centered" id="gcal" src="https://calendar.google.com/calendar/embed?src=c_2b70e1fb6735645241198004a1dced8f1dffe9a3bd3177ea93682a8b5e55f50e%40group.calendar.google.com&ctz=America%2FToronto" margin="auto" width="1200" height="1200" text-align="center" display="block"></iframe>
         </p></div>
 
     <script src="script.js"></script>
