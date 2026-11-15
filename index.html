@@ -7,18 +7,10 @@
     <title>University of Toronto Concrete Canoe Team</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .blue-button a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #2b57b6;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition-duration: 0.4s;
-        }
+        
 
-        .blue-button a:hover{
-            box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.6);
+        .hero-image-container {
+            align-self: stretch;
         }
     </style>
 </head>
@@ -31,7 +23,7 @@
                 <!-- Logo Section -->
                 <div class="logo-section">
                     <div class="logo-circle">
-                        <img src="/img/CCLogo.jpg" alt="Concrete Canoe Logo" className="h-10 w-10 object-contain" />
+                        <img src="img/CCLogo.jpg" alt="Concrete Canoe Logo" className="h-10 w-10 object-contain" />
                     </div>
                     <div class="logo-text">
                         <div class="team-name">University of Toronto Concrete Canoe</div>
@@ -101,22 +93,25 @@
 
                     <div class="hero-text">
                         <p>
-                            The Concrete Canoe Team is a multi-disciplinary design team completely managed by students. Over thirty
-                            undergraduates in the Faculty of Applied Science and Engineering from all the disciplines, as well as
-                            students from the Faculty of Arts and Science, form the active team.
+                            The Concrete Canoe Team is a student-run, multi-disciplinary design team that endeavours to build the best concrete canoe we possibly can! 
+                            While "Concrete" may give us a slight civil engineering bias, we are proud to have talent from disciplines across both engineering and artsci
+                            contributing to our team. We maintain our own hull structural design testing software, we dedicate a team to sustainability, we must come up with
+                            an appealing aesthetic and theme, and of course, we must have a strong paddling crew to race the canoe!
                         </p>
 
                         <p>
-                            The Concrete Canoe team is a great way for students to apply the knowledge they gain in the classroom to
-                            a stimulating, interactive competition.
+                            The zenith of every year's design cycle is the annual Canadian National Concrete Canoe Competition (CNCCC),
+                            hosted by the Canadian Society of Civil Engineers in parallel with the Steel Bridge and Water Treatment Competition.
+                            The 2027 CNCCC will be held at the University of Waterloo between the 12th and 16th of May.
                         </p>
 
-                        <p>
-                            New members are always welcome; <a href="https://discord.gg/JHpzDfuffJ">join our discord server</a> to get involved and learn more about the team!
+                        <p class="discord-button">
+                            <a href="https://discord.gg/JHpzDfuffJ"> <img src="img/Icons/Discord-Symbol-White.png" style="width: 2rem; margin-right:0.25rem; padding-right: 0.25rem;"/> Join our discord server to get involved!</a>
                         </p>
                         <p class="blue-button">
                             <a href="progress.html">Explore Our Road to Competition This Year</a>
                         </p>
+                        
                     </div>
                 </div>
 
@@ -129,6 +124,7 @@
                         <p>View our past canoes since 1998.</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -205,57 +201,63 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-image">
-                        <img src="img/Exec/2025-2026/michaelAtkinson.png" alt="Michael Atkinson">
+                        <img src="img/Exec/2025-2026/lucasGaspari.jpg" alt="Lucas Gaspari">
                     </div>
-                    <h3>Michael Atkinson</h3>
-                    <p class="team-role">Co-Director</p>
-                    <p class="team-bio">EngSci 2T6+PEY</p>
+                    <h3 style="text-align: center;">Lucas Gaspari</h5>
+                    <p class="team-role" style="text-align: center;">Technical Captain</p>
+                    <p class="team-bio" style="text-align: center;">CIV 2T7+PEY</p>
                 </div>
+
 
                 <div class="team-member">
                     <div class="team-image">
-                        <img src="img/Exec/2025-2026/jamesJurach.jpg" alt="James Jurach" style="object-position: center 40%;">
+                        <img src="img/Exec/2025-2026/brendonChen.jpg" alt="Brendon Chen">
                     </div>
-                    <h3>James Jurach</h3>
-                    <p class="team-role">Co-Director</p>
-                    <p class="team-bio">Chem 2T7+PEY</p>
+                    <h3 style="text-align: center;">Brendon Chen</h5>
+                    <p class="team-role" style="text-align: center;">Administrative and Logistics Captain</p>
+                    <p class="team-bio" style="text-align: center;">MSE 2T8+PEY</p>
                 </div>
 
                 <div class="team-member">
                     <div class="team-image">
                         <img src="img/Exec/2025-2026/Karl Peterson.JPG" alt="Karl Peterson">
                     </div>
-                    <h3>Karl Peterson</h3>
-                    <p class="team-role">Supervisor</p>
+                    <h3 style="text-align: center;">Prof. Karl Peterson</h3>
+                    <p class="team-role" style="text-align: center;">Supervisor</p>
+                    <p class="team-bio" style="text-align: center;">Ph.D. CIV 0T8</p>
                 </div>
 
                 <div style="text-align: left">
-                <a href="execs.html">Meet the Full Team</a>
+                    <p class ="blue-button"><a href="execs.html">Meet the Full Team</a></p>
+                
                 </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+        <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h4>About</h4>
+                    <h4>Team</h4>
                     <ul>
                         <li><a href="index.html">Our Story</a></li>
-                        <li><a href="execs.html">Team Members</a></li>
+                        <li><a href="execs.html">Executive Directory</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h4>Projects</h4>
                     <ul>
+                        <li><a href="progress.html">Current Design</a></li>
+                    </ul>
+                    <ul>
                         <li><a href="canoes.html">Past Canoes</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
-                    <h4>Resources</h4>
+                    <h4>Communications</h4>
                     <ul>
                         <li><a href="sponsors.html">Sponsors</a></li>
                     </ul>
@@ -268,6 +270,8 @@
         </div>
     </footer>
 
+</body>
+</html>
     <script src="script.js"></script>
 </body>
 </html>
