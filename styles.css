@@ -489,6 +489,41 @@ body {
   color: #6b7280;
 }
 
+.blue-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2b57b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  width: fit-content;
+}
+
+.blue-button a:hover{
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.6);
+}
+
+.discord-button a {
+    padding: 10px 20px;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    text-align: right;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.discord-button a:hover{
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.6);
+}
+
 /* Responsive Styles */
 @media (min-width: 768px) {
   .hero-title {

@@ -16,7 +16,7 @@ const galleryItems = [
     name: "C4N O3H",
     theme: "New York Taxicab",
     category:"light",
-    image: "img/Canoes/c4n03h-pl.jpg",
+    image: "img/Canoes/c4n03h.jpg",
     link: "canoes/canoe2025.html",
   },
   {
@@ -44,6 +44,7 @@ const galleryItems = [
     theme: "Norse Mythology",
     category: "light",
     image: "img/Canoes/fenrir_thumb.png",
+    link: "canoes/canoe2022.html"
   },
   {
     id: 4,
@@ -51,7 +52,8 @@ const galleryItems = [
     name: "Polaris II",
     theme: "Perseverance",
     category: "light",
-    image: "img"
+    image: "img",
+    link: "canoes/canoe2021.html"
   },
   {
     id: 1,
@@ -270,3 +272,13 @@ document.addEventListener('DOMContentLoaded', function() {
     </a>
   `).join('');
 });
+
+function load_team_data(n) {
+  const execs = document.getElementById('execs-card');
+  const team_list = document.getElementById('team-card');
+
+  if (!execs || !team_list) return;
+
+  execs.innerHTML = `<p> ${galleryItems[n].exec_list} </p>` ;
+  team_list.innerHTML = `<p>${galleryItems[n].team_members} </p>`
+}
