@@ -1,4 +1,5 @@
 // Canoe gallery data
+const offset = 2026;
 const galleryItems = [
   {
     id: 0,
@@ -8,6 +9,13 @@ const galleryItems = [
     category:"light",
     image: "img/Canoes/astronautical_thumb.png",
     link: "canoes/canoe2026.html",
+    exec_list: ["James Jurach, CHE 2T7", "Michael Atkinson, NΨ 2T6"],
+    team_members: ["Lucas Gaspari, CIV 2T7", "Folu Alawoya, MEC 2T7", "Elorie Bernard-Lacroix, NΨ 2T6"
+      , "John Hoang, CIV 2T6", "Brendon Chen, MSE 2T8", "Arshdeep Kaur, CIV 2T7", "Wilhelm Fournier, CIV 2T8", 
+      "Shinnah Bulos, CIV 2T5", "Carman Xu, CIV 2T6", "Dylan Minneker, CIV 2T7", "Shoryu Matsumoto, M.A.Sc. CIV 2T7",
+      "Daniel Zheng, ECE 2T6", "Madeleine Rebello, CIV 2T6", "Will James, FOR 2T7", "Elizabeth Arsenault, POL 2T6",
+      "Sophie Barkley, CIV 2T8", "Rima Hidjir, CIV 2T8", "Radia Mansouri, CIV 2T8"
+    ]
 
   },
   {
@@ -18,6 +26,13 @@ const galleryItems = [
     category:"light",
     image: "img/Canoes/c4n03h.jpg",
     link: "canoes/canoe2025.html",
+    exec_list: ["James Jurach, CHE 2T7", "Michael Atkinson, NΨ 2T6"],
+    team_members: ["Lucas Gaspari, CIV 2T7", "Folu Alawoya, MEC 2T7", "Elorie Bernard-Lacroix, NΨ 2T6"
+      , "John Hoang, CIV 2T6", "Brendon Chen, MSE 2T8", "Arshdeep Kaur, CIV 2T7", "Wilhelm Fournier, CIV 2T8", 
+      "Shinnah Bulos, CIV 2T5", "Carman Xu, CIV 2T6", "Dylan Minneker, CIV 2T7", "Shoryu Matsumoto, M.A.Sc. CIV 2T7",
+      "Daniel Zheng, ECE 2T6", "Madeleine Rebello, CIV 2T6", "Will James, FOR 2T7", "Elizabeth Arsenault, POL 2T6",
+      "Sophie Barkley, CIV 2T8", "Rima Hidjir, CIV 2T8", "Radia Mansouri, CIV 2T8"
+    ]
   },
   {
     id: 1,
@@ -273,12 +288,13 @@ document.addEventListener('DOMContentLoaded', function() {
   `).join('');
 });
 
-function load_team_data(n) {
+function load_team_data(year) {
+  const n = offset-year;
   const execs = document.getElementById('execs-card');
   const team_list = document.getElementById('team-card');
 
   if (!execs || !team_list) return;
 
-  execs.innerHTML = `<p> ${galleryItems[n].exec_list} </p>` ;
-  team_list.innerHTML = `<p>${galleryItems[n].team_members} </p>`
+  execs.innerHTML = galleryItems[n].exec_list.map(exec => `<ul>${exec}</ul>`).join('');
+  team_list.innerHTML = galleryItems[n].team_members.map(member => `<ul>${member}</ul>`).join('');
 }

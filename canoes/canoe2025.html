@@ -55,6 +55,8 @@
                 <a href="../index.html">Contact</a>
             </nav>
         </div>
+            <script src="../script.js"></script>
+            <script src="../canoes.js"></script>
     </header>
 
     <!-- Canoe Detail Section -->
@@ -91,15 +93,7 @@
                     <!-- Project Managers -->
                     <div style="background: white; padding: 2rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
                         <h3 style="font-size: 1.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1.5rem; text-transform: uppercase;">Project Managers</h3>
-                        <ul style="list-style: none; padding: 0; display: grid; gap: 0.75rem; font-size: 1rem;">
-                            <li style="padding-left: 1.5rem; position: relative;">
-                                <span style="position: absolute; left: 0; color: #6b7280;">•</span>
-                                Ashley An [CIV 2T1]
-                            </li>
-							<li style="padding-left: 1.5rem; position: relative;">
-                                <span style="position: absolute; left: 0; color: #6b7280;">•</span>
-								Natasha Valenton [MECH 1T9 + PEY]
-                        </ul>
+                        <div id="execs-card"></div>
                     </div>
                 </div>
             </div>
@@ -107,18 +101,14 @@
             <!-- Team Members (Full Width) -->
             <div style="background: white; padding: 2rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-top: 2rem;">
                 <h3 style="font-size: 1.5rem; font-weight: bold; color: #1f2937; margin-bottom: 1.5rem; text-transform: uppercase;">Team Members</h3>
-                <ul style="list-style: none; padding: 0; display: grid; gap: 0.75rem; font-size: 1rem; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
-                    <li style="padding-left: 1.5rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: #6b7280;">•</span>
-                        Lucas Gaspari [CIV 2T7]
-                    </li>
-                    <li style="padding-left: 1.5rem; position: relative;">
-                        <span style="position: absolute; left: 0; color: #6b7280;">•</span>
-                        et al.
-                    </li>
-                    
-                </ul>
+                <div id="team-card"></div>
             </div>
+            <script>
+
+            window.addEventListener("DOMContentLoaded", () => {
+                load_team_data(2026);
+            });
+            </script>
 
             <!-- Back Button -->
             <div style="margin-top: 3rem; text-align: center;">
@@ -138,6 +128,6 @@
         }
     </style>
 
-    <script src="../script.js"></script>
+
 </body>
 </html>
